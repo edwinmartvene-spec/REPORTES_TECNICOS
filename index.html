@@ -1,1 +1,29 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Reportes Técnicos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registro de Reporte Técnico</h2>
+        <form action="guardar_reporte.php" method="POST">
+            <label for="titulo">Título:</label>
+            <input type="text" name="titulo" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea name="descripcion" required></textarea>
+
+            <label for="fecha">Fecha del reporte:</label>
+            <input type="date" name="fecha" required>
+
+            <label for="tecnico">Técnico responsable:</label>
+            <input type="text" name="tecnico" required>
+
+            <button type="submit">Guardar Reporte</button>
+        </form>
+    </div>
+</body>
+</html>
